@@ -13,11 +13,19 @@ public class RacingGameMessage {
 
 	public static final String FINAL_WINNERS = "최종 우승자 : ";
 
+	/* error message */
+
 	private static final String ERROR_PREFIX = "[ERROR]: ";
 
 	private static final String NOT_NATURAL_NUMBER = "자연수만 입력할 수 있습니다";
 
+	private static final String CAR_NAME_LENGTH = "자동차 이름은 5자 이하여야 합니다";
+
 	public static String notNaturalNumberError(final String inputtedData) {
 		return ERROR_PREFIX + inputtedData + NOT_NATURAL_NUMBER;
+	}
+
+	public static String invalidCarNameLength(final String carName) {
+		return ERROR_PREFIX + carName + CAR_NAME_LENGTH;
 	}
 }
