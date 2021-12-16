@@ -201,3 +201,4 @@ This project is [MIT](https://github.com/woowacourse/java-racingcar-precourse/bl
 -입력을 안내하는 메시지를 출력하고 데이터를 입력받는 클래스
 -결과를 출력하는 기능
     1. 매 턴의 실행 결과
+    2. 최종우승자들을 출력하는 기능

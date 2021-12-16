@@ -19,4 +19,8 @@ public class RacingGameOutput {
 		});
 		System.out.print("\n");
 	}
+
+	public void printWinners(final String winners) {
+		System.out.print(RacingGameMessage.FINAL_WINNERS + winners);
+	}
 }
