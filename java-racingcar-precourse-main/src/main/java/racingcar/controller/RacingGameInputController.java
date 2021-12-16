@@ -31,11 +31,10 @@ public class RacingGameInputController {
 		while(true) {
 			try {
 				final String carsName = input.inputCarsName();
-				if(validation.validateCarName(carsName)) {
-					final List<String> carNameList = parseCarsName(carsName);
-					carNameList.forEach(carName -> cars.add(new Car(carName)));
-					break;
-				}
+				validation.validateCarName(carsName);
+				final List<String> carNameList = parseCarsName(carsName);
+				carNameList.forEach(carName -> cars.add(new Car(carName)));
+				break;
 			} catch (IllegalArgumentException error) {
 				System.out.println(error.getMessage());
 			}

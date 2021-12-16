@@ -14,19 +14,19 @@ public class DataValidation {
 		this.errorMessage = "";
 	}
 
-	public boolean validateNumberData(final String inputtedData) {
+	public void validateNumberData(final String inputtedData) {
 		if (!Pattern.matches(NUMBER_PATTERN, inputtedData)) {
 			errorMessage = RacingGameMessage.notNaturalNumberError(inputtedData);
 			throw new IllegalArgumentException(errorMessage);
 		}
-		return true;
+		return;
 	}
 
-	public boolean validateCarName(final String carName) {
+	public void validateCarName(final String carName) {
 		if(carName.length() > MAX_CAR_NAME_LENGTH) {
 			errorMessage = RacingGameMessage.invalidCarNameLength(carName);
 			throw new IllegalArgumentException(errorMessage);
 		}
-		return true;
+		return;
 	}
 }
