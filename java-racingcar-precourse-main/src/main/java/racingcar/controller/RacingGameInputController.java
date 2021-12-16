@@ -42,5 +42,19 @@ public class RacingGameInputController {
 		return cars;
 	}
 
+	public int inputGameTurns() {
+		int turns = 0;
+		while(true) {
+			try {
+				final String gameTurns = input.inputGameTurns();
+				validation.validateNumberData(gameTurns);
+				turns = Integer.parseInt(gameTurns);
+				break;
+			} catch (IllegalArgumentException error) {
+				System.out.println(error.getMessage());
+			}
+		}
+		return turns;
+	}
 
 }

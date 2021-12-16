@@ -9,6 +9,6 @@ public class Application {
         // TODO 구현 진행
 		RacingGameInputController a = new RacingGameInputController(new DataValidation(),
 			new RacingGameInput());
-		a.inputCarsName();
+		a.inputGameTurns();
 	}
 }
