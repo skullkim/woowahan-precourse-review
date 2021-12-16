@@ -199,3 +199,5 @@ This project is [MIT](https://github.com/woowacourse/java-racingcar-precourse/bl
     2. 자동차 이름이 5자 이하인지를 검증
 - 자동차 한대의 정보를 담는 클래스 구현
 -입력을 안내하는 메시지를 출력하고 데이터를 입력받는 클래스
+-결과를 출력하는 기능
+    1. 매 턴의 실행 결과
