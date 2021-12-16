@@ -190,3 +190,4 @@ This project is [MIT](https://github.com/woowacourse/java-racingcar-precourse/bl
 - 난수를 생성하는 클래스를 만든다
 - 레이싱 게임에서 사용되는 메시지를 만든다
     1. 입력할 데이터를 안내하는 메시지
+    2. 결과 출력과 관련된 메시지
