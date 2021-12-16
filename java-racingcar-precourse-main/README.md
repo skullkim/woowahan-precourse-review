@@ -196,3 +196,4 @@ This project is [MIT](https://github.com/woowacourse/java-racingcar-precourse/bl
         2. 자동차 이름이 6자 이상일 경우
 - 레이싱 게임에서 사용자가 입력한 데이터를 검증하는 기능 추가
     1. 자연수를 입력해야 하지만 다른 문자를 입력한 경우
+    2. 자동차 이름이 5자 이하인지를 검증
