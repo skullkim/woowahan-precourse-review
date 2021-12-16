@@ -198,3 +198,4 @@ This project is [MIT](https://github.com/woowacourse/java-racingcar-precourse/bl
     1. 자연수를 입력해야 하지만 다른 문자를 입력한 경우
     2. 자동차 이름이 5자 이하인지를 검증
 - 자동차 한대의 정보를 담는 클래스 구현
+-입력을 안내하는 메시지를 출력하고 데이터를 입력받는 클래스
