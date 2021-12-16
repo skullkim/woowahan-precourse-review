@@ -12,4 +12,12 @@ public class RacingGameMessage {
 	public static final String TURNS_RESULT = "실행 결과";
 
 	public static final String FINAL_WINNERS = "최종 우승자 : ";
+
+	private static final String ERROR_PREFIX = "[ERROR]: ";
+
+	private static final String NOT_NATURAL_NUMBER = "자연수만 입력할 수 있습니다";
+
+	public static String notNaturalNumberError(final String inputtedData) {
+		return ERROR_PREFIX + inputtedData + NOT_NATURAL_NUMBER;
+	}
 }
