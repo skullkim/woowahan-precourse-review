@@ -185,3 +185,6 @@ public class Car {
 ## 📝 License
 
 This project is [MIT](https://github.com/woowacourse/java-racingcar-precourse/blob/master/LICENSE) licensed.
+
+## 구현할 기능 
+- 난수를 생성하는 클래스를 만든다
