@@ -21,18 +21,24 @@ public class RacingGameInputController {
 		this.input = input;
 	}
 
-	public List<String> parseCarsName(final String carsName) {
+	private List<String> parseCarsName(final String carsName) {
 		String[] carsNameArray = carsName.split(",");
 		return Arrays.asList(carsNameArray);
 	}
+
+	private List<String> validateCarName(final String carsName) {
+		final List<String> carNameList = parseCarsName(carsName);
+		carNameList.forEach(validation::validateCarName);
+		return carNameList;
+	}
+
 
 	public ArrayList<Car> inputCarsName() {
 		final ArrayList<Car> cars = new ArrayList<>();
 		while(true) {
 			try {
 				final String carsName = input.inputCarsName();
-				validation.validateCarName(carsName);
-				final List<String> carNameList = parseCarsName(carsName);
+				final List<String> carNameList = validateCarName(carsName);
 				carNameList.forEach(carName -> cars.add(new Car(carName)));
 				break;
 			} catch (IllegalArgumentException error) {
